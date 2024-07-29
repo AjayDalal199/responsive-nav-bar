@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url("assets/laptop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.glass-container {
+  background-color: rgba(255, 255, 255, 0.523);
+  backdrop-filter: blur(2px);
+}
+nav {
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.desktop-menu {
+  display: flex;
+  justify-content: space-between;
+  display: none;
+  gap: 10px;
+}
+.desktop-menu li {
+  padding: 4px 8px;
+}
+
+.menu-btn {
+  border: none;
+  padding: 3px;
+  background: none;
+  display: flex;
+  align-items: center;
+}
+.menu-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.close-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 40%;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar li {
+  /* background-color: bisque; */
+  /* border: 1px solid blanchedalmond; */
+  padding: 4px 8px;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+/* MEDIA QUERIES */
+/* xs */
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+}
+/* sm */
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+  .menu-btn {
+    display: none;
+  }
+  .desktop-menu {
+    display: flex;
+  }
+}
+/* md */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+/* lg */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+/* xl */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+/* 2xl */
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
